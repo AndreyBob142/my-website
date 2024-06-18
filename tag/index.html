@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятнашки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header class="header">
+  <div class="nav-left">
+    <button id="homeButton">На главную</button>
+    <button id="aboutButton">О игре</button>
+  </div>
+  <div class="timer" id="timer">00:00</div>
+  <div class="nav-right">
+    <button id="refreshButton">Рестарт</button>
+    <button id="rulesButton">Правила</button>
+  </div>
+</header>
+
+<body>
+    <div class="container">
+        <div id="game-board" class="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <div class="modal-content-info">
+        <h2>Правила игры</h2>
+        <p><strong>Цель игры :</strong> переместить плитки таким образом, чтобы они оказались расположенными по порядку (от 1 до 15), а пустая клетка была в правом нижнем углу.</p>
+        <p></p>
+        <p></p>
+        <p> </p>
+        </div>
+
+
+        <div class="modal-content-info">
+        <h2>Инструкция по управлению</h2>
+        <p>Для передвижения ячейки, соседней с пустой, нужно щёлкнуть на нужную ячейку с числом левой кнопкой мыши </p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="./manual.js"></script>
+
+</html>

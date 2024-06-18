@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+
+<header class="header">
+    <div class="nav-left">
+      <button id="homeButton">На главную</button>
+      <button id="aboutButton">Об игре</button>
+    </div>
+    <div class="timer" id="timer">00:00</div>
+    <div class="nav-right">
+      <button id="refreshButton">Рестарт</button>
+      <button id="rulesButton">Правила</button>
+    </div>
+  </div>
+
+</header>
+
+<body>
+    <div id="game-board"></div>
+</body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <div class="modal-content-info">
+        <h2>Правила игры</h2>
+        <p>При каждом движении чисел будет генерироваться клеточка с значением 2 или 4 ;</p>
+        <p>Числа не будут двигаться, если они упираются в стены или  в неравное число ;</p>
+        <p> Нужно объединять одинаковые числа путём их столкновения при движении поля ;</p>
+        <p> Игра закончится, если не будет возможности сделать ход </p>
+        </div>
+
+
+        <div class="modal-content-info">
+        <h2>Инструкция по управлению</h2>
+        <p>Для управления используйте клавиши стрелочек на клавиатуре :</p>
+        <p> Для передвижения всех чисел вверх используйте клавишу ↑ или W ;</p>
+        <p> Для передвижения всех чисел  вниз используйте  клавишу ↓ или S ;</p>
+        <p> Для передвижения всех чисел влево используйте клавишу ← или A ;</p>
+        <p> Для передвижения всех чисел вправо используйте клавишу →  или D</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="./manual.js"></script>
+
+</html>

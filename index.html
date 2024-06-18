@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры-головоломки</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" sizes="32x32" >
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="/image/icon.png" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Играть</a>
+                    <ul class="dropdown">
+                        <li><a href="./sudoku/index.html">Судоку</a></li>
+                        <li><a href="./2048/index.html">2048</a></li>
+                        <li><a href="./tag/index.html">Пятнашки</a></li>
+                        <li><a href="./tiktaktoe/index.html">Крестики-нолики</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Подробнее об играх</a>
+                    <ul class="dropdown">
+                        <li><a href="./about/Sudoku.html">Судоку</a></li>
+                        <li><a href="./about/2048.html">2048</a></li>
+                        <li><a href="./about/tag.html">Пятнашки</a></li>
+                        <li><a href="./about/tiktaktoe.html">Крестики-нолики</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <h1>Добро пожаловать в мир игр-головоломок!</h1>
+    <p>Разгадывайте, исследуйте и наслаждайтесь умственными вызовами.</p>
+</header>
+
+<script src="script.js"></script>
+
+<section>
+    <div class="game">
+        <img src="./image/sudoku_img.png" alt="Судоку">
+        <div class="game-info">
+            <h2>Судоку</h2>
+            <p>Классическая логическая игра, головоломка с числами японского происхождения, которая состоит из заполнения доски из 81 квадрата числами от 1 до 9</p>
+            <p>Хотя они были созданы в середине 80-х, только в 2005 году они стали модными после ежедневного появления в нескольких международных газетах.</p>
+            <button class="play-button" onclick="window.location.href='./sudoku/index.html'">Сыграть</button>
+            <button class="more-button" onclick="window.location.href='./about/sudoku.html'">Подробнее</button>
+        </div>
+    </div>
+
+ <div class="game">
+    <img src="./image/2048_img.png" alt="2048">
+    <div class="game-info">
+        <h2>2048</h2>
+        <p>Игра 2048 - это захватывающая головоломка с числовой тематикой, которая была разработана в 2014 году году Габриэлем Чироном.</p> 
+        <p>Главная цель игры состоит в том, чтобы объединять плитки с одинаковыми числами, чтобы получить плитку со значением 2048.</p>
+        <button class="play-button" onclick="window.location.href='./2048/index.html'">Сыграть</button>
+        <button class="more-button" onclick="window.location.href='./about/2048.html'">Подробнее</button>
+    </div>
+ </div>
+
+ <div class="game">
+     <img src="./image/tag.png" alt="Пятнашки">
+        <div class="game-info">
+        <h2>Пятнашки</h2>
+        <p>Логическая головоломка, в которой необходимо перемещать числовые плитки на игровом поле размером 4 x 4. </p>
+        <p>  Цель игры состоит в том, чтобы переместить все плитки и упорядочить их так, чтобы получить числовую последовательность от 1 до 15, 
+            при этом последняя «ячейка» должна быть свободна. </p>
+        <button class="play-button" onclick="window.location.href='./tag/index.html'">Сыграть</button>
+        <button class="more-button" onclick="window.location.href='./about/tag.html'">Подробнее</button>
+        </div>
+ </div>
+
+ <div class="game">
+     <img src="./image/tiktaktoe.png" alt="Пятнашки">
+       <div class="game-info">
+       <h2>Крестики-нолики</h2>
+       <p>Крестики-нолики — это простая логическая игра для двух игроков, в которой они поочередно ставят свои символы на свободные клетки игрового поля размером 3x3.</p>
+       <p> Цель игры заключается в том, чтобы первым составить непрерывный ряд из трёх своих символов по горизонтали, вертикали или диагонали. </p>
+       <button class="play-button" onclick="window.location.href='./tiktaktoe/index.html'">Сыграть</button>
+       <button class="more-button" onclick="window.location.href='./about/tiktaktoe.html'">Подробнее</button>
+       </div>
+ </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Игры-головоломки. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

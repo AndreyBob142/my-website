@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header class="header">
+    <div class="nav-left">
+      <button id="homeButton">На главную</button>
+      <button id="aboutButton">Об игре</button>
+    </div>
+    <div class="timer" id="timer">00:00</div>
+    <div class="nav-right">
+      <button id="refreshButton">Рестарт</button>
+      <button id="rulesButton">Правила</button>
+    </div>
+  </div>
+
+</header>
+
+<body>
+    <div class="container">
+        <h1>Крестики-нолики</h1>
+        <div class="player-choice">
+            <button id="choose-x">Играть за X</button>
+            <button id="choose-o">Играть за O</button>
+        </div>
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restartButton">Рестарт</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <div class="modal-content-info">
+        <h2>Правила игры</h2>
+        <p>Первыми ходят крестики, затем нолики ;</p>
+        <p>Игра закончится, если х или о собирутся в ряд по диагонали, вертикали или горизонтали ;</p>
+        <p> Игра закончится ничьей, если не будет пересечений и возможности сделать ход  </p>
+        </div>
+
+
+        <div class="modal-content-info">
+        <h2>Инструкция по управлению</h2>
+        <p>Левым клавишей мыши нужно кликнуть нужную ячейку</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="manual.js"></script>
+</html>
